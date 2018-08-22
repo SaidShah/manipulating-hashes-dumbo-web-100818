@@ -14,7 +14,15 @@ def first_challenge
   }
 
   #your code here
-
+  contacts.each do |name, fields|
+    if name == "Freddy Mercury"
+    fields.each do |field, value|
+      if field == :favorite_icecream_flavors
+        value.delete_if{|x| x=="strawberry"}
+      end
+    end
+  end
+end
 
   #remember to return your newly altered contacts hash!
   contacts
