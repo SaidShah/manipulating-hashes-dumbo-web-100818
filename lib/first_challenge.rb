@@ -17,7 +17,7 @@ def first_challenge
   contacts.each do |name, fields|
     if name == "Freddy Mercury"
     fields.each do |field, value|
-      if value == :favorite_icecream_flavors
+      if value == favorite_icecream_flavors:
         value.each do |flavors|
           value.delete_if(flavors=="strawberry")
         end
